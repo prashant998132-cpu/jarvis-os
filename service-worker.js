@@ -1,10 +1,12 @@
-const CACHE_NAME = "jarvis-cache-v1";
+const CACHE_NAME = "jarvis-cache-v2";
+const BASE_PATH = self.location.pathname.replace("service-worker.js", "");
+
 const urlsToCache = [
-  "/",
-  "/index.html",
-  "/style.css",
-  "/app.js",
-  "/manifest.json"
+  BASE_PATH,
+  BASE_PATH + "index.html",
+  BASE_PATH + "style.css",
+  BASE_PATH + "app.js",
+  BASE_PATH + "manifest.json"
 ];
 
 self.addEventListener("install", event => {
