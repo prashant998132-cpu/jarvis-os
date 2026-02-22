@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jarvis OS</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="app">
+
+    <header class="top-bar">
+      <h1>Jarvis</h1>
+      <button id="themeToggle">🌙</button>
+    </header>
+
+    <main class="main-area">
+      <div id="chatBox" class="chat-box">
+        <div class="message bot">Hello. I am Jarvis.</div>
+      </div>
+
+      <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Type a command..." />
+        <button id="sendBtn">Send</button>
+      </div>
+    </main>
+
+    <nav class="bottom-nav">
+      <button>Home</button>
+      <button>Links</button>
+      <button>Settings</button>
+    </nav>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
